@@ -1,0 +1,158 @@
+body{
+    -webkit-backdrop-filter: blur(9px); /* le prefix webkit est necessaire pour que le floutage ce fasse en utilisant safari*/
+    background-image: url(images/wallpaper.webp);
+    backdrop-filter: blur(9px); /*sans prefix ici backdrop-filter fonctionne sur n'importe quel autre moteur de recherche*/
+}
+/*refaire le body et le mettre dans le header avec class id */
+/*Mise en page*/
+#topPage{
+    width: 1000px;
+    height: 248px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.texte{
+    position: absolute;
+    margin-top: 100px;
+    text-align: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navigation{
+    width: 100%;
+    height:auto;
+}
+#page{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    filter: brightness(100%);
+}
+#center {
+    width: 591px;
+    float:left;
+    height: auto;
+
+}
+#basPages{
+    width: 1000px;
+    height:auto;
+    position:relative;
+    clear:both; /*Permet de de le deplacer en bas de page */
+    margin-right: auto;
+    margin-left: auto;
+    bottom:0%;
+    margin-top: -50px;
+}
+#menu-droite{
+    width: 100px;
+    height:auto;
+    float:right;
+
+}
+
+/*Certains parametre sont en automatque pour quel prenne forme selon ce que je vais mettre dans le fichier html*/ 
+
+/*Reglage du Menu*/
+.menu{
+    width: 300px;
+    height:auto;
+    float: left;
+    position: relative;
+    
+}/*Le menu ici est a gauche de la page */
+
+#menu-deroulant {
+    padding:0;
+    margin:0;
+    width: 200px;
+  }
+#menu-deroulant li{
+    list-style: none;
+}
+#menu-deroulant ul {
+    padding:0;
+    margin:0;
+    text-align: left;
+    border:5px;
+}
+
+#menu-deroulant li li{
+     max-height:0;
+     overflow: hidden;
+}
+
+#menu-deroulant a {
+    display:block;
+    padding:3px;
+    font-family:'Baskerville';
+    font-size:20px;
+   border-radius: 3px;
+   color:#FFFFFF;
+   text-decoration: none;
+   
+ }
+#menu-deroulant a:hover{ /*hover permet de changer l'action quand on passe la souris dessus*/
+    color:rgb(62, 0, 162);
+}
+ 
+#menu-deroulant li:hover li {
+    max-height: 5em;
+}
+#menu-deroulant h4{
+    font-family: 'Baskerville';
+    font-size: 22px;
+    color:#FFFFFF;
+}
+
+/*Parametrage des textes*/
+#center p{
+    font-family: 'Baskerville';
+    font-size:20px;
+    color: #FFFFFF;
+    font-weight: bolder;https://www.google.com/
+}
+#center a{
+    color:#FFFFFF;
+    text-decoration: none;
+}
+#center a:hover {
+    color:rgb(62, 0, 162)
+}
+#navigation a {
+    font-family: 'Baskerville';
+    font-size: 18px;
+    color:#FFFFFF;
+    text-decoration: none; /*comme ce sont des liens ils sont automatiquement bleu et souligner ici j'enleve le soulignage */ 
+}
+#basPages p { 
+    font-family: 'Baskerville';
+    font-size: 18px;
+    color:#FFFFFF;
+    
+}
+#basPages a {
+    font-family: 'Baskerville';
+    font-size: 18px;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+.texte h1{
+    font-size: 55px;
+    text-align-last: center;
+    font-family: 'Baskerville';
+    font-variant: initial;
+    font-style:oblique;
+    text-shadow:0 0 30px #0d00bc ,3px 13px 3px rgba(0, 0, 0, 1), 0 0 200px #4C0B5F;
+    color:white;
+}
+#center h1{
+    text-align: center;
+    font-family: 'Baskerville';
+    font-style:italic;
+    color:white; 
+    text-shadow: 0 0 30px #6601DB, 3px 13px 3px #00047B,0 0 200px #FE0101;
+
+}
