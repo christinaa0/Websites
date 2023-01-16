@@ -1,0 +1,173 @@
+body{
+   background-color: #e0d8b2;
+}
+
+/* Mise en page */
+
+#entete{
+    width: 1000px;
+     background: url("../image/sorbonne.jpg") no-repeat scroll center;
+     height:248px;
+     margin-left:auto;
+     margin-right:auto;
+}
+#texte{
+   position:absolute;
+    margin-top: 100px;
+    text-align: center;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+    
+nav{
+    width:100%;
+    height:auto;
+    background-color:#ffefd5;
+    
+}
+
+main{
+    margin-left:auto;
+    margin-right:auto;
+     width: 1000px;
+    
+}
+
+#menu{
+    width: 300px;
+    height:auto;
+    float: left;
+    position: relative;
+    
+}
+
+article{
+    width:591px;
+    float:left;
+    height:auto;
+    
+}
+
+footer{
+    background-color:#ffefd5;
+    position:relative;
+    bottom:0;
+    width:1000px;
+    height:auto;
+    margin-top: -50px;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*formatage des textes*/
+
+nav a {
+    font-family:'Times New Roman';
+    color: #808080;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+p{
+    font-size: 25px;
+    font-family:'Trebuchet MS';
+    text-align:justify;
+    color:rgb(15, 14, 14);
+}
+
+li a{
+    font-size:16px;
+    font-style:initial;
+    margin-left:3px;
+    color: #808080;
+    text-decoration: none;
+
+}
+
+h1{
+    font-size:250%;
+    text-align-last: center;
+    font-family:'Trebuchet MS';
+    font-variant:small-caps;
+    text-decoration: gold;
+    text-shadow:0 0 30px #EC637B,6px 10px 6px rgba(0, 0, 0, 1), 0 0 200px #cf1b3c;
+    font-style: oblique;
+    color:#ffe4c4;
+}  
+
+h4{
+    font-weight:bold;
+    font-family:'Trebuchet MS';
+    text-decoration:underline;
+    font-variant:small-caps;
+    font-size:18px;
+}
+
+footer p {
+    font-size: 15px;
+    color:#808080;
+    font-family: 'Times New Roman';
+
+}
+footer a {
+    text-decoration: none;
+    font-size:15px;
+    font-family:'Time New Roman';
+    color:#808080;
+}
+
+article p::first-letter {
+    font-size:250%;
+    font-weight:lighter;
+
+
+}
+
+/*Affichage menu*/
+
+#menu-deroulant {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: left;
+    width: 180px;
+  }
+
+#menu-deroulant ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    text-align: left;
+    border:5px;
+}
+
+#menu-deroulant li li {
+     max-height:0;
+     overflow: hidden;
+}
+
+#menu-deroulant a {
+    display:block;
+    padding:3px;
+    font-family:'Trebuchet MS';
+    font-size:15px;
+    background-color: #f5deb3;
+    border-radius: 3px;
+ }
+ 
+#menu-deroulant li:hover li {
+    max-height: 5em;
+    background-color:rgb(192, 177, 145);
+    color: #0000;
+ }
+
+#menu-deroulant li:hover h4 {
+      color:black;
+      background-color: #ffefd5;
+      border-bottom: 4px gold;
+}
+
